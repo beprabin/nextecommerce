@@ -1,0 +1,12 @@
+<?php
+// session
+session_start();
+$_SESSION['username'] = 'test1';
+$_SESSION['password'] = 'pass';
+
+echo "Session data is saved";
+
+// logout
+session_start();
+session_unset();
+session_destroy();
